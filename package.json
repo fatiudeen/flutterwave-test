@@ -15,7 +15,6 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "express-validator": "^6.14.0",
-    "http2-express-bridge": "^1.0.7",
     "morgan": "^1.10.0"
   },
   "devDependencies": {

@@ -1,7 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import morgan from 'morgan';
 import express, { Application } from 'express';
-import http2Express from 'http2-express-bridge';
 import cors from 'cors';
 import middlewares from './middlewares';
 import router from './route';
@@ -12,7 +11,7 @@ class App {
     this.init();
   }
   private init() {
-    this.app = http2Express(express);
+    this.app = express();
     this.middlewares();
     this.initRoutes();
   }
